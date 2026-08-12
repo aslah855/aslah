@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="demo.html">
+        <table><Tr><td> <label for="name">NAME :</label></td>
+             <td><input type="text" id="name" name="name" placeholder="please enter your name " required></td></Tr>
+           <tr><td><label for="user">USER name:</label></label></td>
+                <td><input type="text" name="user" id="user" placeholder="enter the username"></td></tr>
+             <tr><td><label for="password">Password</label></td></tr>
+              <tr><td><label for="age">Age</label></td></tr>
+               <tr><td><label for="file">Choose File :</label></td></tr>
+                <tr><td> <label for="area">About me</label></td></tr></table>
+                 
+        
+   
+    <input type="text" id="name" name="name" placeholder="please enter your name " required>
+    
+   
+    
+    <input type="password" name="password" id="password" required placeholder="enter your password"
+    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="requires at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special chara">
+    <br>
+   
+    <input type="number" name="age" id="age"><br>
+   
+    <input type="file" id="file" name="file" multiple><br>
+   
+    <textarea name="area" id="area"></textarea><br>
+     <input type="submit" value="submit" step="1" min="18" max="60">
+
+    </form>
+</body>
+</html>
