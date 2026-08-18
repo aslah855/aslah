@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            color: rgb(62, 24, 24);
+            background-color: rgb(164, 130, 241);
+            height: 600px;
+            width: 500px;
+            font-style:georgia;
+            font-size: 20px;
+            MARGIN-LEFT: 400PX;
+            PADDING-LEFT: 10PX;
+            PADDING-TOP: 10PX;
+        }
+        .div2{
+            color: rgb(0, 0, 0);
+            background-color: rgb(244, 239, 255);
+            height: 550px;
+            width: 450px;
+            font-style: italic;
+            MARGIN-LEFT: 10PX;
+            PADDING-LEFT: 10PX;
+            PADDING-TOP: 10PX;
+            font-size: 15px;
+            BORDER-RADIUS: 20PX;
+        }
+        .form-table{
+                BORDER-SPACING:0 20PX;
+        }
+        td{
+            white-space: nowrap;
+        }
+    .div3{
+        color:rgb(0, 0, 0);
+        background-color: rgb(144, 125, 185);
+        height: 100px;
+        width: 100px;
+        font-style: italic;
+        MARGIN-LEFT: 200PX;
+        margin-top: 20PX;
+    }
+        .bottom-table{
+            padding-left: 300px;
+            padding-top: 100px;
+        }
+                </style>
+</head>
+<body>
+    <div class="div1">
+    SIGN UP 
+    <div class="div2">
+        <form action="demo.html">
+            <table class="form-table"><tr><td><label for="name">FULL NAME  : </label></td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your full name" required></td></tr>
+        <tr><td><label for="date">DATE OF BIRTH  : </label></td>
+          <td><input type="date" id="date" name="date" required></td></tr>
+        <tr><td><label for="gender">GENDER  : </label></td>
+            <td>
+                <input type="radio" id="gender" name="gender" value="male">
+                <label for="male">Male</label> 
+                <input type="radio" id="gender" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="gender" name="gender" value="other">
+                <label for="other">Other</label>
+            </td>
+            <tr><td><label for="county">COUNTRY :</label></td>
+            <td><select id="county" name="county" required>
+                <option value="">Select Country</option>
+                <option value="usa">INDIA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+            </select></td></tr>
+            <tr><td><label for="email">EMAIL :</label></td>
+            <td><input type="email" id="email" name="email" placeholder="ENTER YOUR EMAIL" required></td></tr>
+                <TR><TD><LABEL for="number">PHONE NUMBER :</LABEL></TD>
+                <TD><input type="tel" id="number" name="number" placeholder="ENTER PHONE NUMBER" required pattern="^\d{10}$" maxlength="10"></TD></TR>
+                <tr><td><label for="password">PASSWORD :</label></td>
+                <td><input type="password" name="password" id="password" required placeholder="enter your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                </td></tr>
+                <tr><td><label for="confirm_password">CONFIRM PASSWORD :</label></td>
+                <td><input type="password" name="confirm_password" id="confirm_password" required placeholder="confirm your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"></td></tr>
+            </tr>
+            <table><tr>
+                <td><input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="checkbox">I Agree to the Terms and Conditions</label></td>
+            </tr></table>
+            <table class="bottom-table">
+         <tr><td>
+            <input type="submit" value="submit" style="font-style: oblique; background-color: bisque;"></td>
+            <td><input type="reset" value="Reset" style="font-style: oblique; background-color: bisque;"></td>
+            </tr>
+            </table>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
